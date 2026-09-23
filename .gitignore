@@ -1,0 +1,11 @@
+# Local Obsidian session state and backups
+.obsidian/workspace*.json
+.obsidian/cache/
+.obsidian/*.before-build
+.obsidian/plugins/
+.obsidian/sync.json
+.trash/
+.DS_Store
+Thumbs.db
+~$*
+*.tmp

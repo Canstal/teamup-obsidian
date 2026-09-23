@@ -1,0 +1,39 @@
+"filters":
+  "and":
+    - "file.ext == \"md\""
+    - "type == \"产品设计\""
+"properties":
+  "category":
+    "displayName": "类别"
+  "priority":
+    "displayName": "优先级"
+  "status":
+    "displayName": "状态"
+  "screenshot_count":
+    "displayName": "截图数快照"
+  "owner":
+    "displayName": "记录人"
+  "experience_date":
+    "displayName": "体验日期"
+  "product":
+    "displayName": "产品"
+  "updated":
+    "displayName": "更新日期"
+"views":
+  -
+    "type": "table"
+    "name": "全部"
+    "order":
+      - "file.name"
+      - "status"
+      - "updated"
+  -
+    "type": "table"
+    "name": "待推进"
+    "filters":
+      "and":
+        - "status != \"已完成\""
+    "order":
+      - "file.name"
+      - "status"
+      - "updated"
